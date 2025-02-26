@@ -12,6 +12,8 @@ const backgroundMusic = document.getElementById("background-music");
 
 // Story Variables
 let currentStep = 0;
+const backMusic = new Audio("background-music.mp3");
+backMusic.loop = true;
 
 // Start Game Function
 function startGame() {
@@ -19,7 +21,6 @@ function startGame() {
     introSection.style.display = "none";
     gameSection.style.display = "block";
     restartSection.style.display = "none";
-    backgroundMusic.play();
     showStory();
 }
 
@@ -27,9 +28,7 @@ function startGame() {
 function restartGame() {
     introSection.style.display = "block";
     gameSection.style.display = "none";
-    restartSection.style.display = "none";
-    backgroundMusic.pause();
-    backgroundMusic.currentTime = 0;
+    restartSection.style.display = "none"
     usernameInput.value = "";
     currentStep = 0; // Reset the current step
 }
