@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dead Silence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Dead Silence</h1>
+        <!-- Intro Section -->
+        <div id="intro">
+            <p id="intro-text">
+                The voicemail was brief—just a whisper of your name followed by static.  
+                Then, a voice you barely recognized:  
+                <strong>"They're coming... the silence... it's already here."</strong>  
+                Ivy's voice cuts off, leaving only the low hum of an empty line.  
+                Something is wrong. You need to find out what happened—before the silence takes everything.
+            </p>
+            <input type="text" id="username" placeholder="Enter your name">
+            <button id="start-button">Start</button>
+        </div>
+
+        <!-- Game Section -->
+        <div id="game" style="display: none;">
+            <img id="story-image" src="start.jpg" alt="Story Scene">
+            <p id="story-text"></p>
+            <div id="choices"></div>
+        </div>
+
+        <!-- Restart Section -->
+        <div id="restart-section" style="display: none;">
+            <p>Would you like to try again?</p>
+            <button id="restart-button">Restart</button>
+        </div>
+
+        <audio id="background-music" src="background-music (3).mp3" loop></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
