@@ -1,4 +1,6 @@
 let playerName = "";
+const backMusic = new Audio("background-music.mp3");
+backMusic.loop = true;
 const introSection = document.getElementById("intro");
 const gameSection = document.getElementById("game");
 const restartSection = document.getElementById("restart-section");
@@ -12,8 +14,6 @@ const backgroundMusic = document.getElementById("background-music");
 
 // Story Variables
 let currentStep = 0;
-const backMusic = new Audio("background-music.mp3");
-backMusic.loop = true;
 
 // Start Game Function
 function startGame() {
